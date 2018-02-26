@@ -1,0 +1,36 @@
+{
+    "name": "filters",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "babel-core": "latest",
+        "babel-loader": "latest",
+        "babel-preset-env": "latest",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "bootstrap-styl": "^5.0.8",
+        "css-loader": "latest",
+        "extract-text-webpack-plugin": "latest",
+        "file-loader": "latest",
+        "gulp": "latest",
+        "gulp-imagemin": "latest",
+        "gulp-pug": "latest",
+        "gulp-rename": "latest",
+        "gulp-watch": "latest",
+        "postcss-loader": "latest",
+        "style-loader": "latest",
+        "stylus": "latest",
+        "stylus-loader": "latest",
+        "uglifyjs-webpack-plugin": "latest",
+        "url-loader": "latest",
+        "webpack": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
