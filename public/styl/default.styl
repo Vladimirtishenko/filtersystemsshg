@@ -1,11 +1,24 @@
+$AvertaExtraThin = Averta_ExtraThin, sans-serif
 $AileronUltraLight = Aileron_UltraLight, sans-serif
-$AileronLight = AileronLight, sans-serif
+$AileronUltraLightItalic = Aileron_UltraLight_Italic, sans-serif
+$AileronLight = Aileron_Light, sans-serif
+$AileronLightItalic = Aileron_Light_Italic, sans-serif
 $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
+
+@font-face
+	font-family Averta_ExtraThin
+	font-weight 400
+	src url("../fonts/Averta-ExtraThin.otf")
 
 @font-face
 	font-family Aileron_UltraLight
 	font-weight 400
 	src url("../fonts/Aileron-UltraLight.otf")
+
+@font-face
+	font-family Aileron_UltraLight_Italic
+	font-weight 400
+	src url("../fonts/Aileron-UltraLightItalic.otf")
 	
 @font-face
 	font-family Aileron_Light
@@ -13,10 +26,19 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	src url("../fonts/Aileron-Light.otf")
 	
 @font-face
+	font-family Aileron_Light_Italic
+	font-weight 400
+	src url("../fonts/Aileron-LightItalic.otf")
+	
+@font-face
 	font-family BerenisADFPro_Regular
 	font-weight 400
 	src url("../fonts/BerenisADFPro-Regular.otf")
 	
+.fuhr-no-wrap
+	white-space: nowrap
+	color: inherit
+	letter-spacing inherit
 	
 .fuhr-header
 	padding 60px 0 130px
@@ -29,7 +51,7 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	margin-left 50px
 	
 .fuhr-header__box-contact
-	margin-right 25px
+	margin-right 35px
 
 	
 .fuhr-contacts-ul-li-tel
@@ -67,19 +89,38 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	color #feffff
 	
 .fuhr-header__head
-	max-width 900px
+	margin -32px auto 0
 	padding 0 75px
-	margin 0 auto 0
+	max-width 960px
 	text-align center
-	font-family $BerenisADFProRegular
+	font-family $AvertaExtraThin
 	font-weight 400
-	font-size 72px
-	line-height 92px
+	font-size 79px
+	line-height 110px
 	letter-spacing 5.4px
 	color #feffff
+	&:after
+		content: ''
+		display: inline-block
+		margin 0 0 -20px 20px
+		width: 210px
+		height: 91px
+		background  url("../img/logo2.png") no-repeat top left
+		background-size: 168px auto
 
+.fuhr-header__head-subtext
+	font-size: 47px
+	color: inherit
+	letter-spacing: 3.6px
+	
 .fuhr-header__catalog
-	margin 50px auto 0
+	margin 40px auto 0
+	
+.fuhr-catalog--black
+	border 2px solid #1a1a1a
+	color: #242424
+	
+.fuhr-catalog
 	display block
 	width 320px	
 	border 2px solid #feffff
@@ -106,36 +147,46 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	&:after
 		bottom -2px
 		width 10px
-		
+	
 .fuhr-about
 	margin 110px auto 0
-	width: 88%
+	width: 94%
 
 .fuhr-about__box
-	max-width: 770px
-	margin-top: 90px
+	max-width: 720px
+	margin-top: 20px
 	
 .fuhr-about__box-head
 	text-align center
-	font-family $BerenisADFProRegular
+	font-family $AvertaExtraThin
 	font-weight 400
-	font-size 80px
+	font-size 70px
 	line-height 80px
-	letter-spacing 6px
+	letter-spacing 5.3px
 	color #242424
+	text-transform: uppercase
+	
+.fuhr-about__box-par-margin
+	margin-top: 55px
 
 .fuhr-about__box-par
-	margin-top: 45px
 	text-align: center
 	font-family $AileronUltraLight
 	font-weight 400
-	font-size 26px
-	line-height 48px
-	letter-spacing: 1.1px
+	font-size 24px
+	line-height 38px
+	letter-spacing: 1.9px
 	color #242424
 
 .fuhr-about__img
-	width: 47%
+	width: 43%
 	height: auto
 	
+.
 	
+	
+	
+.fuhr-footer
+	padding: 100px 0 80px
+	background #868686 url("../img/bg_footer.jpg") no-repeat center
+	background-size auto
