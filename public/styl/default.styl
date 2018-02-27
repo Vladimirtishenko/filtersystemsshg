@@ -1,0 +1,141 @@
+$AileronUltraLight = Aileron_UltraLight, sans-serif
+$AileronLight = AileronLight, sans-serif
+$BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
+
+@font-face
+	font-family Aileron_UltraLight
+	font-weight 400
+	src url("../fonts/Aileron-UltraLight.otf")
+	
+@font-face
+	font-family Aileron_Light
+	font-weight 400
+	src url("../fonts/Aileron-Light.otf")
+	
+@font-face
+	font-family BerenisADFPro_Regular
+	font-weight 400
+	src url("../fonts/BerenisADFPro-Regular.otf")
+	
+	
+.fuhr-header
+	padding 60px 0 130px
+	background #868686 url("../img/bg_head.jpg") no-repeat center
+	background-size auto
+	
+.fuhr-header__box-logo
+	width 140px
+	height auto
+	margin-left 50px
+	
+.fuhr-header__box-contact
+	margin-right 25px
+
+	
+.fuhr-contacts-ul-li-tel
+.fuhr-contacts-ul-li-mail
+	padding-left 55px
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 5px
+		background-size 100% auto
+		background-repeat no-repeat 
+		
+
+.fuhr-contacts-ul-li-tel:before
+	width 32px
+	height 31px
+	top 5px
+	background-image url(../img/icon_telephone.svg)
+	
+
+.fuhr-contacts-ul-li-mail
+	margin-top 20px
+	&:before
+		width 34px
+		height 30px
+		background-image url(../img/icon_mail.svg)
+	
+.fuhr-contacts-ul-li-link
+	font-family $AileronLight
+	font-weight 400
+	font-size 24px
+	line-height 35px
+	letter-spacing 2px
+	color #feffff
+	
+.fuhr-header__head
+	max-width 900px
+	padding 0 75px
+	margin 0 auto 0
+	text-align center
+	font-family $BerenisADFProRegular
+	font-weight 400
+	font-size 72px
+	line-height 92px
+	letter-spacing 5.4px
+	color #feffff
+
+.fuhr-header__catalog
+	margin 50px auto 0
+	display block
+	width 320px	
+	border 2px solid #feffff
+	border-left 2px solid #0f972f
+	font-family $AileronUltraLight
+	font-weight 400
+	font-size 36px
+	line-height 73px
+	letter-spacing 2.7px
+	color #feffff
+	text-align center
+	&:before
+	&:after
+		content ''
+		position absolute
+		left -2px
+		display block
+		height 0
+		border-top 2px solid #0f972f
+		border-right 2px solid transparent
+	&:before
+		top -2px
+		width 85px
+	&:after
+		bottom -2px
+		width 10px
+		
+.fuhr-about
+	margin 110px auto 0
+	width: 88%
+
+.fuhr-about__box
+	max-width: 770px
+	margin-top: 90px
+	
+.fuhr-about__box-head
+	text-align center
+	font-family $BerenisADFProRegular
+	font-weight 400
+	font-size 80px
+	line-height 80px
+	letter-spacing 6px
+	color #242424
+
+.fuhr-about__box-par
+	margin-top: 45px
+	text-align: center
+	font-family $AileronUltraLight
+	font-weight 400
+	font-size 26px
+	line-height 48px
+	letter-spacing: 1.1px
+	color #242424
+
+.fuhr-about__img
+	width: 47%
+	height: auto
+	
+	

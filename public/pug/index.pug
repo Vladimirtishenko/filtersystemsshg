@@ -1,4 +1,24 @@
 extends layout/layout
 
 block content
-	
+    
+    section.fuhr-header
+        .fuhr-header__box.fl.fl-justify-b.fl-align-st
+            img.fuhr-header__box-logo(src="./public/img/logo.svg")
+            ul.fuhr-header__box-contact.fuhr-contacts-ul 
+                li.fuhr-header__box-contact-tel.fuhr-contacts-ul-li-tel.relative-core
+                    a.fuhr-header__box-contact-tel-link.fuhr-contacts-ul-li-link(href="tel:+3711100011" itemprop="telephone") +3711100011
+                li.fuhr-header__box-contact-mail.fuhr-contacts-ul-li-mail.relative-core 
+                    a.fuhr-header__box-contact-mail.fuhr-contacts-ul-li-link(href="mailto:info@fuhr-gmbh.com" itemprop="email") info@fuhr-gmbh.com
+        h1.fuhr-header__head Filter systems SHG - official partner FUHR
+        a.fuhr-header__catalog.relative-core(href="#") Catalog
+        
+        
+    section.fuhr-about.fl.fl-justify-a.fl-align-st
+        .fuhr-about__box
+            h2.fuhr-about__box-head  About us
+            p.fuhr-about__box-par Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur  mus.
+        img.fuhr-about__img(src="./public/img/filter-about.jpg")
+            
+    
+                
