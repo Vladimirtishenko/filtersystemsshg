@@ -39,11 +39,16 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	white-space: nowrap
 	color: inherit
 	letter-spacing inherit
-	
+
+.fuhr-aileron-ultra-italic
+	color: inherit
+	letter-spacing: inherit
+	font-family: $AileronUltraLightItalic
+
 .fuhr-header
 	padding 60px 0 130px
 	background #868686 url("../img/bg_head.jpg") no-repeat center
-	background-size auto
+	background-size auto 100%
 	
 .fuhr-header__box-logo
 	width 140px
@@ -87,9 +92,14 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	line-height 35px
 	letter-spacing 2px
 	color #feffff
+	transition color .2s
+	&:hover
+		color: #0c9e2e
+	&:before
+		background-color #0c9e2e
 	
 .fuhr-header__head
-	margin -32px auto 0
+	margin -55px auto 0
 	padding 0 75px
 	max-width 960px
 	text-align center
@@ -116,9 +126,6 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 .fuhr-header__catalog
 	margin 40px auto 0
 	
-.fuhr-catalog--black
-	border 2px solid #1a1a1a
-	color: #242424
 	
 .fuhr-catalog
 	display block
@@ -132,6 +139,8 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	letter-spacing 2.7px
 	color #feffff
 	text-align center
+	transition color .2s, border .6s
+	//overflow: hidden
 	&:before
 	&:after
 		content ''
@@ -141,12 +150,26 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 		height 0
 		border-top 2px solid #0f972f
 		border-right 2px solid transparent
+		transition width .2s ease
 	&:before
 		top -2px
 		width 85px
 	&:after
 		bottom -2px
 		width 10px
+	&:hover
+		color: #0c9e2e
+		border-right-color #0f972f
+		&:before
+		&:after
+			width calc(100% + 4px)
+			border-right none
+		
+
+.fuhr-catalog--black
+	border 2px solid #1a1a1a
+	border-left: 2px solid #0f972f
+	color: #242424
 	
 .fuhr-about
 	margin 110px auto 0
@@ -166,6 +189,9 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	color #242424
 	text-transform: uppercase
 	
+.fuhr-about__box-img--mobile
+	display: none
+	
 .fuhr-about__box-par-margin
 	margin-top: 55px
 
@@ -182,11 +208,699 @@ $BerenisADFProRegular = BerenisADFPro_Regular, sans-serif
 	width: 43%
 	height: auto
 	
-.
+.fuhr-produts
+	margin: 120px 0 125px
 	
+.fuhr-produts__row1
+	width: 92%
+
+.fuhr-produts__row3
+	width: 92%
+	margin-top: 55px
+	padding-left: 60px
 	
+.fuhr-produts-box
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		width: 100%
+		border: 1px solid #c6c6c6
+		z-index: -1
+		
+.fuhr-produts__row1-box1
+	width: 636px
+	text-align: right
+	&:after
+		height: 293px
+		bottom: 60px
+
+.fuhr-produts__row1-box2
+	width: 674px
+	margin-top: 30px
+	&:after
+		height: 246px
+		bottom: 30px
+
+.fuhr-produts__row3-box3
+	width: 590px
+	margin-top: 30px
+	&:after
+		height: 217px
+		bottom: 75px
+
+.fuhr-produts__row3-box4
+	width: 682px
+	margin-top: 40px
+	&:after
+		height: 272px
+		bottom: 80px
+
+.fuhr-produts-img
+	display: inline-block
+	height: auto
 	
+.fuhr-produts__row1-box1-img
+	margin-right: 50px
+	width: 439px
+
+.fuhr-produts__row1-box2-img
+	margin-left: 15px
+	width: 451px
+
+.fuhr-produts__row3-box3-img
+	margin-left: 25px
+	width: 512px
+
+.fuhr-produts__row3-box4-img
+	margin-left: 45px
+	width: 609px
+	
+.fuhr-produts-par
+	text-align: center
+	font-family: $AileronLight
+	font-weight: 400
+	font-size: 18px
+	line-height: 25px
+	letter-spacing: 1.4px
+	text-transform: uppercase
+	background-color: #fff
+	box-shadow: 2.724px 5.346px 38px 2px rgba( 18, 26, 48, .18 )
+	
+.fuhr-produts__row1-box1-par
+	margin: 15px 0 0 30px
+	width: 490px
+	padding: 35px 25px
+	
+.fuhr-produts__row1-box2-par
+	margin: -10px 0 0 165px
+	padding: 25px 25px
+	width: 475px
+	
+.fuhr-produts__row1-box2-par
+	margin: -10px 0 0 165px
+	padding: 25px 25px
+	width: 475px
+	
+.fuhr-produts__row3-box3-par
+	margin: 25px 0 0 40px
+	padding: 35px 35px
+	width: 470px
+	
+.fuhr-produts__row3-box4-par
+	margin: 15px 0 0 55px
+	padding: 35px 25px
+	width: 480px
+	
+.fuhr-produts__row2
+	width: 100%
+	text-align: center
+	
+.fuhr-produts__row2-head
+	display: inline-block
+	margin: 105px auto 0
+	font-family: $AvertaExtraThin
+	font-weight: 400
+	font-size: 70px
+	line-height: 1
+	letter-spacing: 5.3px
+	color: #242424
+	text-transform: uppercase
+	
+.fuhr-produts__row2-catalog
+	bottom: -155px
+	left: 50%
+	transform translatex(-50%)
+
 .fuhr-footer
-	padding: 100px 0 80px
+	padding: 55px 3% 70px
 	background #868686 url("../img/bg_footer.jpg") no-repeat center
-	background-size auto
+	background-size auto 100%
+	
+.fuhr-footer__logo
+	width: 206px
+	height: auto
+
+.fuhr-footer_txt
+	flex-grow: 1
+	margin: 30px 0 0 35px
+	padding-right: 20px
+	
+.fuhr-footer_head
+	&:before
+		width: 140px
+		height: 75px
+		background: url("../img/logo2.png") no-repeat top left
+
+.fuhr-footer_par
+	margin-top: 35px
+	&:before
+		width: 206px
+		height: 31px
+		background: url("../img/logo_footer.png") no-repeat top left
+		
+.fuhr-footer_head
+.fuhr-footer_par
+	font-family: $AileronLight
+	font-weight: 400
+	font-size: 25px
+	line-height: 38px
+	letter-spacing: 1.9px
+	color: #feffff
+	padding-left: 250px
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 15px
+		transform translateY(-50%)
+		background-size: 100% auto
+
+.fuhr-footer__contact
+	margin-top: 40px
+	
+.fuhr-footer__contact-tel
+	padding-left: 70px
+	&:before
+		top: 0
+		width: 38px
+		height: 38px
+		
+.fuhr-footer__contact-mail
+	margin-top: 30px
+	padding-left: 70px
+	&:before
+		top: 0
+		width: 41px
+		height: 41px
+		
+.fuhr-footer__contact-tel-link
+.fuhr-footer__contact-mail-link
+	font-size: 26px
+	letter-spacing: 2.8px
+	
+
+@media (max-width 1600px)
+	.fuhr-header__head
+		margin-top: 15px
+	
+	.fuhr-about
+		margin-top: 60px
+	
+	.fuhr-about__box
+		max-width: 640px
+	
+	.fuhr-about__box-head
+		margin-top: 0
+		font-size: 65px
+	
+	.fuhr-about__box-par
+		font-size: 22px
+	
+	.fuhr-about__box-par-margin
+		margin-top: 35px
+
+	.fuhr-about__img
+		margin: 110px 0 0 15px
+		width: 40%
+	
+	.fuhr-produts
+		margin-top: 80px
+	
+	.fuhr-produts__row1
+		width: 100%
+	
+	.fuhr-produts__row1-box1
+		width: 470px
+	
+	.fuhr-produts__row1-box1-img
+		width: 400px
+		margin-right: 50px
+
+	.fuhr-produts__row1-box1-par
+		width: 335px
+	
+	.fuhr-produts__row1-box2
+		width: 495px
+	
+	.fuhr-produts-par
+		font-size: 16px
+		padding: 25px
+	
+	.fuhr-produts__row1-box2-par
+		width: 414px
+		margin: 10px 0 0 65px
+	
+	.fuhr-produts__row2-head
+		font-size: 64px
+		margin-top: 85px
+	
+	.fuhr-produts__row2-catalog
+		bottom: -125px
+	
+	.fuhr-produts__row3
+		margin-top: 175px
+		padding-left: 0
+		width: 90%
+	
+	.fuhr-produts__row3-box3
+		width: 470px
+	
+	.fuhr-produts__row3-box3-img
+		width: 410px
+	
+	.fuhr-produts__row3-box3-par
+		width: 370px
+	
+	.fuhr-produts__row3-box4
+		width: 520px
+	
+	.fuhr-produts__row3-box4-par
+		width: 450px
+	
+	.fuhr-produts__row3-box4-img
+		width: 440px
+	
+	.fuhr-footer__contact
+		align-self: center
+	
+	.fuhr-footer_head
+		font-size: 22px
+		&:before
+			width: 129px
+	
+	.fuhr-footer_par
+		font-size: 22px
+		:before
+			width: 187px
+	
+	
+	
+@media (max-width 1199px)
+	.fuhr-header
+		padding-bottom: 80px
+	
+	.fuhr-header__head
+		font-size: 65px
+		line-height: 90px  
+		&:after
+			margin-bottom: -25px
+			background-size: 148px auto
+	
+	.fuhr-header__head-subtext
+		font-size: 43px
+	
+	.fuhr-about
+		margin-top: 80px
+	
+	.fuhr-about__img
+		display: none
+	
+	.fuhr-about__box
+		max-width: 720px
+		margin-top: 0
+
+	.fuhr-about__box-img--mobile
+		display: block
+		margin: 40px auto 0
+		width: 93%
+		height: auto
+	
+	.fuhr-about__box-par-margin
+		margin-top: 50px
+	
+	.fuhr-about__box-par
+		font-size: 24px
+	
+	.fuhr-produts__row1
+		width: 92%
+	
+	.fuhr-produts__row1-box1
+		width: 400px
+	
+	.fuhr-produts__row1-box1-img
+		width: 320px
+	
+	.fuhr-produts__row1-box1-par
+		margin-left: 20px
+
+	.fuhr-produts__row1-box2
+		width: 435px
+	
+	.fuhr-produts__row1-box2-img
+		width: 370px
+	
+	.fuhr-produts__row1-box2-par
+		width: 390px
+		margin-left: 30px
+		padding: 25px 10px
+	
+	.fuhr-produts__row3
+		justify-content: space-around
+	
+	.fuhr-produts__row3-box3
+		width: 400px
+		
+	.fuhr-produts__row3-box3-img
+		width: 360px
+	
+	.fuhr-produts__row3-box3-par
+		width: 300px
+		margin-left: 45px
+	
+	.fuhr-produts__row3-box4
+		width: 420px
+		
+	.fuhr-produts__row3-box4-img
+		width: 340px
+	
+	.fuhr-produts__row3-box4-par
+		width: 350px
+	
+	.fuhr-footer
+		padding: 55px 1% 70px
+		flex-wrap: wrap
+
+	.fuhr-footer_txt
+		margin: 0 0 0 15px
+	
+	.fuhr-footer_par:before
+		width: 156px
+	
+	.fuhr-footer__contact
+		margin: 60px auto 0
+	
+	.fuhr-footer__contact-tel-link
+	.fuhr-footer__contact-mail-link
+		font-size: 26px
+		letter-spacing: 2.8px
+	
+	.fuhr-footer__contact-mail
+		margin-top: 30px
+	
+		
+@media (max-width 991px)
+	.fuhr-header
+		padding 40px 0 65px
+	
+	.fuhr-header__box
+		align-items: center
+	
+	.fuhr-header__box-logo
+		width: 100px
+		margin-left: 40px
+	
+	.fuhr-header__box-contact
+		margin-right: 15px
+		display: flex
+		
+	
+	.fuhr-contacts-ul-li-mail
+		padding-left: 40px
+		margin: 0 0 0 30px
+		&:before
+			top: 8px
+			width: 27px
+
+	.fuhr-contacts-ul-li-tel
+		padding-left: 40px
+		&:before
+			width: 27px
+
+	.fuhr-contacts-ul-li-link
+		font-size: 20px
+	
+	.fuhr-header__head
+		font-size: 55px
+		line-height: 67px
+		margin-top: 40px
+		&:after
+			margin: 0 0 -20px 5px
+			width: 145px
+			height: 70px
+			background-size: 121px auto
+	
+	.fuhr-header__head-subtext
+		font-size: 38px
+	
+	.fuhr-catalog
+		width: 230px
+		font-size: 30px
+		line-height: 59px
+		
+	.fuhr-header__catalog
+		margin-top: 40px
+	
+	.fuhr-about__box
+		max-width: 630px	
+	
+
+	.fuhr-about__box-par
+		font-size: 22px
+	
+	.fuhr-produts__row1
+		width: 90%
+		order: 2
+		margin-top: 140px
+	
+	.fuhr-produts__row1-box1
+		width: 305px
+	
+	.fuhr-produts__row1-box1-img
+		width: 230px
+	
+	.fuhr-produts__row1-box1-par
+		width: 265px
+		margin-left: 15px
+	
+	.fuhr-produts__row1-box2
+		width: 335px
+	
+	.fuhr-produts__row1-box2-img
+		width: 280px
+	
+	.fuhr-produts__row1-box2-par
+		width: 280px
+	
+	.fuhr-produts__row2
+		order: 1
+	
+	.fuhr-produts__row2-head
+		margin-top: 0
+		
+	.fuhr-produts__row2-catalog
+		bottom: -100px
+	
+	.fuhr-produts__row3
+		order: 3
+		margin-top: 35px
+	
+	.fuhr-produts__row3-box3
+		width: 320px
+		&:after
+			height: 200px
+	
+	.fuhr-produts__row3-box3-img
+		width: 280px
+	
+	.fuhr-produts__row3-box3-par
+		width: 240px
+		margin-left: 45px
+
+	.fuhr-produts__row3-box4
+		width: 320px
+		&:after
+			height: 200px
+	
+	.fuhr-produts__row3-box4-img
+		width: 260px
+	
+	.fuhr-produts__row3-box4-par
+		width: 240px
+	
+	.fuhr-footer__contact-tel-link
+	.fuhr-footer__contact-mail-link
+		font-size: 26px
+		letter-spacing: 2.8px
+
+	.fuhr-footer__contact-mail
+		margin: 30px 0 0  
+		
+
+@media (max-width 767px)
+	.fuhr-header
+		padding-bottom: 80px
+	
+	.fuhr-header__box-logo
+		margin-left: 20px
+		
+	.fuhr-header__box-contact
+		display: block
+	
+	.fuhr-contacts-ul-li-link
+		font-size: 16px
+	
+	.fuhr-contacts-ul-li-mail
+		margin: 10px 0 0 0
+	
+	.fuhr-header__head
+		font-size: 39px
+		padding: 0 20px
+		margin-top 45px
+		&:after
+			margin: 0 20 -20px 5px
+			width: 110px
+			height: 61px
+			background-size: 100% auto
+		
+	.fuhr-header__head-subtext
+		font-size: 32px
+		
+	.fuhr-catalog
+		width: 200px
+		line-height: 49px
+		font-size: 22px
+
+	.fuhr-header__catalog
+		margin-top: 35px
+	
+	.fuhr-about
+		margin-top: 60px
+	
+	.fuhr-about__box
+		max-width: 470px
+	
+	.fuhr-about__box-head
+		font-size: 55px
+	
+	.fuhr-about__box-par
+		font-size: 20px
+		line-height: 36px
+	
+	.fuhr-produts__row1
+	.fuhr-produts__row3
+		flex-wrap: wrap
+		width: 80%
+		
+	.fuhr-produts__row2-head
+		font-size: 50px
+	
+	.fuhr-produts__row1-box2
+		margin-top: 50px
+	
+	.fuhr-produts__row3-box4
+		margin-top: 60px
+	
+	.fuhr-footer__contact-tel-link
+	.fuhr-footer__contact-mail-link
+		font-size: 26px
+		letter-spacing: 2.8px
+
+	.fuhr-footer__contact-mail
+		margin: 30px 0 0
+	
+	.fuhr-footer_txt
+		padding-right: 1%
+	
+	.fuhr-footer_head
+	.fuhr-footer_par
+		font-size: 19px
+		padding-left: 120px   
+		&:before
+			width: 100px
+			left: 0
+
+
+@media (max-width 499px)
+	.fuhr-header__box
+		flex-wrap: wrap
+		justify-content: center
+		align-items: start
+	
+	.fuhr-header__box-logo
+		margin-left 0
+		margin-top: 20px
+		
+		
+	.fuhr-header__box-contact
+		margin: 20px 50px 0
+	
+	.fuhr-header__head
+		font-size: 25px
+		padding: 0 5px
+		letter-spacing: 4px
+		line-height: 45px
+	
+	.fuhr-header__head-subtext
+		font-size: 24px
+		letter-spacing: 3px
+	
+	.fuhr-header__catalog
+		margin-top: 50px
+	
+	.fuhr-about
+		margin-top: 45px
+		
+	.fuhr-about__box-head
+		font-size: 49px
+	
+	.fuhr-about__box-img--mobile
+		width: 90%
+		margin-top: 30px
+	
+	.fuhr-about__box-par
+		font-size: 18px
+		line-height: 36px
+	
+	.fuhr-about__box-par-margin
+		margin-top: 40px
+	
+	.fuhr-produts__row1-box1
+	.fuhr-produts__row1-box2
+	.fuhr-produts__row3-box3
+	.fuhr-produts__row3-box4
+		width: 255px
+	
+	.fuhr-produts__row1-box1-par
+	.fuhr-produts__row1-box2-par
+	.fuhr-produts__row3-box3-par
+	.fuhr-produts__row3-box4-par
+		width: 225px
+		margin-right: auto
+		margin-left: auto
+	
+
+
+	.fuhr-produts__row1-box1-img
+	.fuhr-produts__row1-box2-img
+	.fuhr-produts__row3-box3-img
+	.fuhr-produts__row3-box4-img
+		display: block
+		width: 220px
+		margin: 0 auto
+	
+
+	.fuhr-produts__row1-box1-img
+	.fuhr-produts__row1-box2-img
+		width: 200px
+
+	.fuhr-footer_head
+	.fuhr-footer_par
+		font-size: 19px
+		padding: 70px 0 0
+		&:before
+			width: 100px
+			height: 55px
+			left: 50%
+			top: 0
+			transform translate(-50% 0)
+	
+	
+	.fuhr-footer_par
+		padding-top: 30px
+	
+
+	.fuhr-footer__contact-tel-link
+	.fuhr-footer__contact-mail-link
+		font-size: 16px
+		letter-spacing: 1.8px
