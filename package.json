@@ -24,13 +24,11 @@
     "stylus-loader": "latest",
     "uglifyjs-webpack-plugin": "latest",
     "url-loader": "latest",
-    "webpack": "3.11.0"
-  },
-  "devDependencies": {
-    "webpack": "^4.0.0"
+    "webpack": "3.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp pug",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
